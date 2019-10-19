@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Currency Convertor</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Currency Convertor</h1>
+    <h5>Powered by <a href="https://exchangeratesapi.io/">Exchangeratesapi.io</a> </h5>
+
+    <div class="convertor-area">
+      <div>
+        <p>From</p>
+        <div class="from-currency">
+          <button id="fromCurrencyButton" class="currency-button">
+            Select Currency
+          </button>
+          <ul class="currency-list">
+          </ul>
+        </div>
+        <input type="number" class="from-currency-value" placeholder="Enter your amount here" min="1" oninput="validity.valid||(value='');" />
+      </div>
+
+      <div>
+        <p>To</p>
+        <div class="to-currency">
+          <button id="toCurrencyButton" class="currency-button">
+            Select Currency
+          </button>
+          <ul class="currency-list">
+          </ul>
+        </div>
+        <input type="number" class="to-currency-value" placeholder="Your converted Value will be displayed here" />
+      </div>
+
+    </div>
+
+    <button id = "convert" class="btn">Convert</button>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
