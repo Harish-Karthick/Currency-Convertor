@@ -63,11 +63,11 @@ displayExchangeRate = (currencyValue,fromTag,toTag) => {
   }
 }
 
-
-const convertorArea = document.querySelector('.convertor-area');
-convertorArea.addEventListener('click',(e) => {
+document.addEventListener('click',(e) => {
   if(e.target.classList.contains('currency-button')) {
     displayCurrencyList(e);
+  } else{
+    document.querySelectorAll('.currency-list').forEach(currencyList => currencyList.classList.remove('show'));
   }
 });
 
